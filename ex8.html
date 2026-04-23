@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa registradora</title>
+</head>
+<body>
+    <script>
+        let preco;
+        let total = 0;
+
+        do {
+        preco = parseFloat(prompt("Digite o preço do produto (0 para finalizar):"));
+        total += preco;
+        } while (preco !== 0);
+
+        alert("Total da compra: R$ " + total);
+    </script>
+    <h1>Caixa registradora</h1>
+    <a href="index.html"><button>voltar</button></a>
+
+</body>
+</html>

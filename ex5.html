@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de senha</title>
+</head>
+<body>
+    <script>
+        let senha = prompt("Defina uma senha:");
+        let tentativa = prompt("Digite a senha:");
+
+        while (tentativa !== senha) {
+        alert("Senha incorreta, tente novamente");
+        tentativa = prompt("Digite a senha:");
+    }
+
+        alert("Acesso concedido!");
+    </script>
+    <h1>Validação de senha</h1>
+    <a href="index.html"><button>voltar</button></a>
+</body>
+</html>

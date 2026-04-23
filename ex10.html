@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de advinhação</title>
+</head>
+<body>
+    <script>
+        let numeroSecreto = Math.floor(Math.random() * 10) + 1;
+        let tentativa;
+        let tentativas = 0;
+
+        while (tentativa !== numeroSecreto) {
+        tentativa = parseInt(prompt("Adivinhe o número (1 a 10):"));
+        tentativas++;
+
+        if (tentativa !== numeroSecreto) {
+        alert("Errou, tente novamente!");
+        }
+        } 
+
+        alert("Parabéns! Você acertou em " + tentativas + " tentativas!");
+    </script>
+    <h1>Jogo de advinhação</h1>
+    <a href="index.html"><button>voltar</button></a>
+</body>
+</html>

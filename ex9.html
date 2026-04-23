@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior idade</title>
+</head>
+<body>
+    <script>
+        let maior = 0;
+        let menor = 999;
+
+        for (let i = 1; i <= 5; i++) {
+        let idade = parseInt(prompt("Digite a idade:"));
+
+        if (idade > maior) {
+        maior = idade;
+        }
+
+        if (idade < menor) {
+        menor = idade;
+        }
+    }
+
+        alert("Maior idade: " + maior);
+        alert("Menor idade: " + menor);
+    </script>
+    <h1>Maior idade</h1>
+    <a href="index.html"><button>voltar</button></a>
+</body>
+</html>
