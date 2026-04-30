@@ -1,0 +1,81 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Estilização da Lista no index.html */
+ol {
+    background: white;
+    padding: 30px 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+/* Estilização dos Links e Botões */
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsividade simples */
+@media (max-width: 480px) {
+    ol {
+        padding: 20px 30px;
+    }
+}
